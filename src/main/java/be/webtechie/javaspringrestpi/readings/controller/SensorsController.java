@@ -46,8 +46,9 @@ public class SensorsController {
 	private final Object LOCK = new Object();
 
 	//@Value("${sensorsMasterDirectory:/sys/bus/w1/devices/w1_bus_master1/}")
-	@Value("${sensorsMasterDirectory:/Users/gordonfrog/devices/}")
-	private String SENSORS_MASTER_DIRECTORY;
+	//@Value("${sensorsMasterDirectory:/Users/gordonfrog/devices/}")
+	//@Value("${sensorsMasterDirectory:/temperature/devices/}")
+	private String SENSORS_MASTER_DIRECTORY = "/temperature/devices/";
 
 	@Autowired
 	private RaspberryPiTemperatureRecordedConfiguration configuration;
